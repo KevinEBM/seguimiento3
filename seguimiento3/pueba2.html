@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú en JavaScript</title>
+</head>
+<body>
+    <script>
+        function mostrarMenu() {
+            let opcion;
+            do {
+                opcion = prompt(
+                    "Selecciona una opción:\n" +
+                    "1. Inicio\n" +
+                    "2. Acerca de\n" +
+                    "3. Servicios\n" +
+                    "4. Contacto\n" +
+                    "5. Salir"
+                );
+
+                switch(opcion) {
+                    case "1":
+                        alert("Has seleccionado: Inicio");
+                        break;
+                    case "2":
+                        alert("Has seleccionado: Acerca de");
+                        break;
+                    case "3":
+                        alert("Has seleccionado: Servicios");
+                        break;
+                    case "4":
+                        alert("Has seleccionado: Contacto");
+                        break;
+                    case "5":
+                        alert("Saliendo del menú...");
+                        break;
+                    default:
+                        alert("Opción no válida, intenta de nuevo.");
+                }
+            } while(opcion !== "5");
+        }
+
+        mostrarMenu();
+    </script>
+</body>
+</html>
